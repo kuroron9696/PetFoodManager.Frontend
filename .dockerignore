@@ -1,0 +1,14 @@
+**/.dockerignore
+**/.env
+**/.git
+**/.Dockerfile*
+**/node_modules
+**/.vs
+**/.vscode
+**/.github
+**/.nuxt
+.env
+.env*
+node_modules
+LICENSE
+README.md
