@@ -1,0 +1,26 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+$text-sizes: (
+  huge: 2.6rem,
+  large: 2.2rem,
+  normal: 1.9rem,
+  small: 1.2rem,
+  minimum: 1.3rem,
+);
+
+$text-weights: (
+  bold: 900,
+  regular: 400,
+  thin: 100
+);
+
+@mixin text($size, $thickness) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: map-get($map: $text-sizes, $key: $size);
+  font-weight: map-get($map: $text-weights, $key: $thickness);
+}
+
+$color-base: var(--color-base);
+$container-width: 1080px;
